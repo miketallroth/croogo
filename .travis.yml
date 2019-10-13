@@ -64,9 +64,7 @@ before_script:
 
   - curl -sSfL -o ~/.phpenv/versions/$(phpenv version-name)/bin/phpunit https://phar.phpunit.de/phpunit-7.5.16.phar
 
-  - set PATH=~/.phpenv/versions/$(phpenv version-name)/bin:$PATH
-
-  - export PATH
+  - export PATH=~/.phpenv/versions/$(phpenv version-name)/bin:$PATH
 
 script:
   - sh -c "if [ '$DEFAULT' = '1' ]; then which phpunit; fi"

@@ -62,7 +62,7 @@ before_script:
 
   - echo $(phpenv version-name)
 
-  - curl -sSfL -l ~/.phpenv/versions/$(phpenv version-name)/bin/phpunit https://phar.phpunit.de/phpunit-7.5.16.phar
+  - curl -sSfL -o ~/.phpenv/versions/$(phpenv version-name)/bin/phpunit https://phar.phpunit.de/phpunit-7.5.16.phar
 
   - set PATH=~/.phpenv/versions/$(phpenv version-name)/bin:$PATH
 

@@ -19,6 +19,7 @@ env:
 services:
   - memcached
   - redis-server
+  - mysql
 
 matrix:
   fast_finish: true

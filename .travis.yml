@@ -66,6 +66,8 @@ before_script:
 
   - set PATH=~/.phpenv/versions/$(phpenv version-name)/bin:$PATH
 
+  - export PATH
+
 script:
   - sh -c "if [ '$DEFAULT' = '1' ]; then which phpunit; fi"
 

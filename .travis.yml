@@ -63,6 +63,8 @@ before_script:
   - curl -sSfL -l ~/.phpenv/versions/$(phpenv version-name)/bin/phpunit https://phar.phpunit.de/phpunit-7.5.16.phar
 
 script:
+  - sh -c "if [ '$DEFAULT' = '1' ]; then which phpunit; fi"
+
   - sh -c "if [ '$DEFAULT' = '1' ]; then phpunit --version; fi"
 
   - sh -c "if [ '$PHPCS' = '1' ]; then vendor/bin/phpcs -p --extensions=php --standard=vendor/cakephp/cakephp-codesniffer/CakePHP ./Core/src ./Core/tests; fi"

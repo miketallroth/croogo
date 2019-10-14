@@ -25,3 +25,5 @@ Croogo::translateModel('Croogo/Blocks.Blocks', [
     ],
     'allowEmptyTranslations' => false,
 ]);
+
+echo print_r(Cache::getConfig('croogo_blocks'),true) . "\n";

@@ -53,7 +53,7 @@ class IntegrationTestCase extends CakeIntegrationTestCase
         Configure::write('EventHandlers', []);
 
         PluginManager::unload('Croogo/Install');
-        PluginManager::load('Croogo/Example', ['autoload' => true, 'path' => '../Example/', 'bootstrap' => true]);
+        PluginManager::load('Croogo/Example', ['autoload' => true, 'path' => '../Example/']);
         Configure::write('Acl.database', 'test');
 
         PluginManager::events();

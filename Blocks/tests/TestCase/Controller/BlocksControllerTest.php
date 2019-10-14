@@ -43,6 +43,8 @@ class BlocksControllerTest extends IntegrationTestCase
 
         $this->user('admin');
 
+        $this->loadPlugins(['Croogo/Blocks']);
+
         $this->Blocks = TableRegistry::get('Croogo/Blocks.Blocks');
     }
 
